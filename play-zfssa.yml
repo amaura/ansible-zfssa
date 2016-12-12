@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+    - name: Test that my module works
+      zfssa: 
+      register: result
+
+    - debug: var=result   
