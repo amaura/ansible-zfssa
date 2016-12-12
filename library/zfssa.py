@@ -16,10 +16,10 @@ from ansible.module_utils.basic import *
 def main():
     fields = {
         "hostname": {"required": True, "type": "str"},
-        },
-    }
+        }
 
-    module = AnsibleModule(argument_spec={})
+
+    module = AnsibleModule(argument_spec=fields)
     response = {"hello": "world"}
     module.exit_json(changed=False, meta=response)
 
